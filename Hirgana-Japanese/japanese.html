@@ -1,0 +1,863 @@
+<html>
+<head> <link rel="stylesheet" type="text/css" href="Hirgana-style.css"> </head>
+    
+  
+<script src="Hirgana-script.js"></script>
+    
+    <body>
+		
+        <button id='butt3' onclick="symbols()">Show Symbols</button><br/><br/>
+		
+        <h2 id='selectt'>* Select a Test Set *</h2>
+		
+		<button id='butt1' onclick="test1()"> Test Set 1</button>
+		<button id='butt2' onclick="test2()"> Test Set 2</button>
+		
+    <div id='divv'>
+        <div  class="item">
+    <audio  id='a'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/a.wav" type="audio/mpeg">
+    </audio>
+    <img id='aa' onclick='a.play()' src="http://vignette3.wikia.nocookie.net/japanese-ken/images/7/79/Japanese_Hiragana_A.png/revision/latest?cb=20110209014543" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Hiragana_%E3%81%82_stroke_order_animation.gif';" onmouseout="this.src = 'http://vignette3.wikia.nocookie.net/japanese-ken/images/7/79/Japanese_Hiragana_A.png/revision/latest?cb=20110209014543';"  alt="a">
+    <input type="checkbox" name="us" id='check1' onclick="validate1()"/>
+    <span class="caption"><h1>a</h1></span>     
+        </div>
+        <div class="item">
+            <audio  id='i'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/i.wav" type="audio/mpeg">
+    </audio>
+    <img id='ii' onclick='i.play()' src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-i.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Hiragana_%E3%81%84_stroke_order_animation.gif';" onmouseout="this.src = 'http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-i.png';" alt="a">
+    <input type="checkbox" name="us" id='check2' onclick="validate2()"/>
+    <span class="caption"><h1>i</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='u'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/u.wav" type="audio/mpeg">
+    </audio>
+    <img id='uu' onclick='u.play()' src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Hiragana_%E3%81%86_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png';" alt="u" >
+    <input type="checkbox" name="us" id='check3' onclick="validate3()"/>
+    <span class="caption"><h1>u</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='e'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/e.wav" type="audio/mpeg">
+    </audio>
+    <img id='ee' onclick='e.play()' src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Hiragana_%E3%81%88_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png';" alt="e" border="5" style="width:150px;height:100px;">
+    <input type="checkbox" name="us" id='check4' onclick="validate4()"/>
+    <span class="caption"><h1>e</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='o'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/o.wav" type="audio/mpeg">
+    </audio>
+    <img id='oo' onclick='o.play()' src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Hiragana_%E3%81%8A_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png';" alt="e" border="5" style="width:150px;height:100px;">
+    <input type="checkbox" name="us" id='check5' onclick="validate5()"/>
+    <span class="caption"><h1>o</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='ka'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ka.wav" type="audio/mpeg">
+    </audio>
+    <img id='kaa' onclick='ka.play()' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/97/Hiragana_%E3%81%8B_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png';"  alt="a">
+    <input type="checkbox" name="us" id='check6' onclick="validate6()"/>
+    <span class="caption"><h1>ka</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ki'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ki.wav" type="audio/mpeg">
+    </audio>
+    <img id='kii' onclick="ki.play()" src="http://www.charbase.com/images/glyph/12365" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/1/18/Hiragana_%E3%81%8D_stroke_order_animation.gif';" onmouseout="this.src = 'http://www.charbase.com/images/glyph/12365';" alt="a">
+     <input type="checkbox" name="us" id='check7' onclick="validate7()"/>
+    <span class="caption"><h1>ki</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ku'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ku.wav" type="audio/mpeg">
+    </audio>
+    <img id='kuu' onclick="ku.play()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/68/Hiragana_%E3%81%8F_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png';" alt="u">
+    <input type="checkbox" name="us" id='check8' onclick="validate8()"/>
+    <span class="caption"><h1>ku</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ke'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ke.wav" type="audio/mpeg">
+    </audio>
+    <img id='kee' onclick="ke.play()" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/5/57/Hiragana_%E3%81%91_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png';" alt="e" border="5">
+    <input type="checkbox" name="us" id='check9' onclick="validate9()"/>
+    <span class="caption"><h1>ke</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ko'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ko.wav" type="audio/mpeg">
+    </audio>
+    <img id='koo' onclick="ko.play()" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/8/83/Hiragana_%E3%81%93_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png';" alt="e" border="5" style="width:150px;height:100px;">
+    <input type="checkbox" name="us" id='check10' onclick="validate10()"/>
+    <span class="caption"><h1>ko</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='sa'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/sa.wav" type="audio/mpeg">
+    </audio>
+    <img id='saa' onclick="sa.play()"  src="http://www.charbase.com/images/glyph/12373" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/79/Hiragana_%E3%81%95_stroke_order_animation.gif';" onmouseout="this.src = 'http://www.charbase.com/images/glyph/12373';"  alt="a">
+    <input type="checkbox" name="us" id='check11' onclick="validate11()"/>
+    <span class="caption"><h1>sa</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='shi'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/shi.wav" type="audio/mpeg">
+    </audio>
+    <img id='sii' onclick="shi.play()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Japanese_Hiragana_kyokashotai_SI.svg/500px-Japanese_Hiragana_kyokashotai_SI.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Hiragana_%E3%81%97_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Japanese_Hiragana_kyokashotai_SI.svg/500px-Japanese_Hiragana_kyokashotai_SI.svg.png';" alt="a">
+    <input type="checkbox" name="us" id='check12' onclick="validate12()"/>
+    <span class="caption"><h1>si</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='su'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/su.wav" type="audio/mpeg">
+    </audio>
+    <img id='suu' onclick="su.play()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Japanese_Hiragana_kyokashotai_SU.svg/500px-Japanese_Hiragana_kyokashotai_SU.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Hiragana_%E3%81%99_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Japanese_Hiragana_kyokashotai_SU.svg/500px-Japanese_Hiragana_kyokashotai_SU.svg.png';" alt="u">
+    <input type="checkbox" name="us" id='check13' onclick="validate13()"/>
+    <span class="caption"><h1>su</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='se'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/se.wav" type="audio/mpeg">
+    </audio>
+    <img id='see' onclick="se.play()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Hiragana_%E3%81%9B_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png';" alt="e">
+    <input type="checkbox" name="us" id='check14' onclick="validate14()"/>
+    <span class="caption"><h1>se</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='so'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/so.wav" type="audio/mpeg">
+    </audio>
+    <img id='soo' onclick="so.play()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Hiragana_%E3%81%9D_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png';" alt="e">
+    <input type="checkbox" name="us" id='check15' onclick="validate15()"/>
+    <span class="caption"><h1>so</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='ta'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ta.wav" type="audio/mpeg">
+    </audio>
+    <img id='taa' onclick="ta.play()" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_TA.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Hiragana_%E3%81%9F_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_TA.png';"  alt="a">
+    <input type="checkbox" name="us" id='check16' onclick="validate16()"/>
+    <span class="caption"><h1>ta</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='chi'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/chi.wav" type="audio/mpeg">
+    </audio>
+    <img id='tii' onclick="chi.play()" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Japanese_Hiragana_kyokashotai_TI.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/3/32/Hiragana_%E3%81%A1_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Japanese_Hiragana_kyokashotai_TI.png';" alt="a">
+    <input type="checkbox" name="us" id='check17' onclick="validate17()"/>
+    <span class="caption"><h1>ti</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='tsu'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/tsu.wav" type="audio/mpeg">
+    </audio>
+    <img id='tuu' onclick="tsu.play()" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/08/Hiragana_%E3%81%A4_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png';" alt="u" border="5" style="width:150px;height:100px;">
+    <input type="checkbox" name="us" id='check18' onclick="validate18()"/>
+    <span class="caption"><h1>tu</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='te'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/te.wav" type="audio/mpeg">
+    </audio>
+    <img id='tee' onclick="te.play()" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/1/15/Hiragana_%E3%81%A6_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png';" alt="e">
+    <input type="checkbox" name="us" id='check19' onclick="validate19()"/>
+    <span class="caption"><h1>te</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='to'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/to.wav" type="audio/mpeg">
+    </audio>
+    <img id='too' onclick="to.play()" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Japanese_Hiragana_kyokashotai_TO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Hiragana_%E3%81%A8_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/07/Japanese_Hiragana_kyokashotai_TO.png';" alt="e">
+    <input type="checkbox" name="us" id='check20' onclick="validate20()"/>
+    <span class="caption"><h1>to</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='na'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/na.wav" type="audio/mpeg">
+    </audio>
+    <img id='naa' onclick="na.play()" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/8/83/Hiragana_%E3%81%AA_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png';"  alt="a">
+    <input type="checkbox" name="us" id='check21' onclick="validate21()"/>
+    <span class="caption"><h1>na</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ni'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ni.wav" type="audio/mpeg">
+    </audio>
+    <img id='nii' onclick="ni.play()" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/2/27/Hiragana_%E3%81%AB_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png';" alt="a">
+    <input type="checkbox" name="us" id='check22' onclick="validate22()"/>
+    <span class="caption"><h1>ni</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='nu'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/nu.wav" type="audio/mpeg">
+    </audio>
+    <img id='nuu' onclick="nu.play()" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_NU.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Hiragana_%E3%81%AC_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_NU.png';" alt="u">
+    <input type="checkbox" name="us" id='check23' onclick="validate23()"/>
+    <span class="caption"><h1>nu</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ne'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ne.wav" type="audio/mpeg">
+    </audio>
+    <img id='nee' onclick="ne.play()" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Japanese_Hiragana_kyokashotai_NE.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Hiragana_%E3%81%AD_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c0/Japanese_Hiragana_kyokashotai_NE.png';" alt="e" border="5" style="width:150px;height:100px;">
+    <input type="checkbox" name="us" id='check24' onclick="validate24()"/>
+    <span class="caption"><h1>ne</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='no'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/no.wav" type="audio/mpeg">
+    </audio>
+    <img id='noo' onclick="no.play()" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Japanese_Hiragana_kyokashotai_NO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Hiragana_%E3%81%AE_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/71/Japanese_Hiragana_kyokashotai_NO.png';" alt="e">
+    <input type="checkbox" name="us" id='check25' onclick="validate25()"/>
+    <span class="caption"><h1>no</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='ha'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ha.wav" type="audio/mpeg">
+    </audio>
+    <img id='haa' onclick="ha.play()"  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Japanese_Hiragana_kyokashotai_HA.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/4/43/Hiragana_%E3%81%AF_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Japanese_Hiragana_kyokashotai_HA.png';"  alt="a">
+    <input type="checkbox" name="us" id='check26' onclick="validate26()"/>
+    <span class="caption"><h1>ha</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='hi'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/hi.wav" type="audio/mpeg">
+    </audio>
+    <img id='hii' onclick="hi.play()" src="https://upload.wikimedia.org/wikipedia/commons/2/24/%E3%81%B2_%E6%95%99%E7%A7%91%E6%9B%B8%E4%BD%93.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/4/40/Hiragana_%E3%81%B2_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/2/24/%E3%81%B2_%E6%95%99%E7%A7%91%E6%9B%B8%E4%BD%93.png';">
+    <input type="checkbox" name="us" id='check27' onclick="validate27()"/>
+    <span class="caption"><h1>hi</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='hu'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/hu.wav" type="audio/mpeg">
+    </audio>
+    <img id='huu' onclick="hu.play()" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Japanese_Hiragana_kyokashotai_HU.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Hiragana_%E3%81%B5_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Japanese_Hiragana_kyokashotai_HU.png';" alt="u">
+    <input type="checkbox" name="us" id='check28' onclick="validate28()"/>
+    <span class="caption"><h1>hu</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='he'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/he.wav" type="audio/mpeg">
+    </audio>
+    <img id='hee' onclick="he.play()" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Japanese_Hiragana_kyokashotai_HE.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/4/40/Hiragana_%E3%81%B8_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Japanese_Hiragana_kyokashotai_HE.png';" alt="e">
+    <input type="checkbox" name="us" id='check29' onclick="validate29()"/>
+    <span class="caption"><h1>he</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ho'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ho.wav" type="audio/mpeg">
+    </audio>
+    <img id='hoo' onclick="ho.play()" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Japanese_Hiragana_kyokashotai_HO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/96/Hiragana_%E3%81%BB_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Japanese_Hiragana_kyokashotai_HO.png';" alt="e">
+    <input type="checkbox" name="us" id='check30' onclick="validate30()"/>
+    <span class="caption"><h1>ho</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='ma'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ma.wav" type="audio/mpeg">
+    </audio>
+    <img id=maa onclick="ma.play()"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Japanese_Hiragana_kyokashotai_MA.svg/500px-Japanese_Hiragana_kyokashotai_MA.svg.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/65/Hiragana_%E3%81%BE_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Japanese_Hiragana_kyokashotai_MA.svg/500px-Japanese_Hiragana_kyokashotai_MA.svg.png';">
+    <input type="checkbox" name="us" id='check31' onclick="validate31()"/>
+    <span class="caption"><h1>ma</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='mi'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/mi.wav" type="audio/mpeg">
+    </audio>
+    <img id='mii' onclick="mi.play()" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Japanese_Hiragana_kyokashotai_MI.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Hiragana_%E3%81%BF_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/60/Japanese_Hiragana_kyokashotai_MI.png';" alt="a">
+    <input type="checkbox" name="us" id='check32' onclick="validate32()"/>
+    <span class="caption"><h1>mi</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='mu'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/mu.wav" type="audio/mpeg">
+    </audio>
+    <img id='muu' onclick="mu.play()" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_MU.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Hiragana_%E3%82%80_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_MU.png';" alt="u">
+    <input type="checkbox" name="us" id='check33' onclick="validate33()"/>
+    <span class="caption"><h1>mu</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='me'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/me.wav" type="audio/mpeg">
+    </audio>
+    <img id='mee' onclick="me.play()" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Japanese_Hiragana_kyokashotai_ME.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/5/58/Hiragana_%E3%82%81_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Japanese_Hiragana_kyokashotai_ME.png';" alt="e">
+    <input type="checkbox" name="us" id='check34' onclick="validate34()"/>
+    <span class="caption"><h1>me</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='mo'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/mo.wav" type="audio/mpeg">
+    </audio>
+    <img id='moo' onclick="mo.play()" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_Hiragana_kyokashotai_MO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Hiragana_%E3%82%82_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_Hiragana_kyokashotai_MO.png';" alt="e">
+    <input type="checkbox" name="us" id='check35' onclick="validate35()"/>
+    <span class="caption"><h1>mo</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='ya'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ya.wav" type="audio/mpeg">
+    </audio>
+    <img id='yaa' onclick="ya.play()"  src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Japanese_Hiragana_kyokashotai_YA.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/07/Hiragana_%E3%82%84_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Japanese_Hiragana_kyokashotai_YA.png';"  alt="a">
+    <input type="checkbox" name="us" id='check36' onclick="validate36()"/>
+    <span class="caption"><h1>ya</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='yu'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/yu.wav" type="audio/mpeg">
+    </audio>
+    <img id='yuu' onclick="yu.play()" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Japanese_Hiragana_kyokashotai_YU.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/78/Hiragana_%E3%82%86_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Japanese_Hiragana_kyokashotai_YU.png';" alt="u">
+    <input type="checkbox" name="us" id='check37' onclick="validate37()"/>
+    <span class="caption"><h1>yu</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='yo'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/yo.wav" type="audio/mpeg">
+    </audio>
+    <img id='yoo' onclick="yo.play()" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Japanese_Hiragana_kyokashotai_YO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/8/80/Hiragana_%E3%82%88_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/1/10/Japanese_Hiragana_kyokashotai_YO.png';" alt="e" border="5" style="width:150px;height:100px;">
+    <input type="checkbox" name="us" id='check38' onclick="validate38()"/>
+    <span class="caption"><h1>yo</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='ra'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ra.wav" type="audio/mpeg">
+    </audio>
+    <img id='raa' onclick="ra.play()"  src="https://upload.wikimedia.org/wikipedia/commons/2/20/Japanese_Hiragana_kyokashotai_RA.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Hiragana_%E3%82%89_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/2/20/Japanese_Hiragana_kyokashotai_RA.png';"  alt="a">
+    <input type="checkbox" name="us" id='check39' onclick="validate39()"/>
+    <span class="caption"><h1>ra</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ri'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ri.wav" type="audio/mpeg">
+    </audio>
+    <img id='rii' onclick="ri.play()" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Japanese_Hiragana_kyokashotai_RI.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Hiragana_%E3%82%8A_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Japanese_Hiragana_kyokashotai_RI.png';" alt="a">
+    <input type="checkbox" name="us" id='check40' onclick="validate40()"/>
+    <span class="caption"><h1>ri</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ru'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ru.wav" type="audio/mpeg">
+    </audio>
+    <img id='ruu' onclick="ru.play()" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Japanese_Hiragana_kyokashotai_RU.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/2/26/Hiragana_%E3%82%8B_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Japanese_Hiragana_kyokashotai_RU.png';" alt="u">
+    <input type="checkbox" name="us" id='check41' onclick="validate41()"/>
+    <span class="caption"><h1>ru</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='re'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/re.wav" type="audio/mpeg">
+    </audio>
+    <img id='ree' onclick="re.play()" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Japanese_Hiragana_kyokashotai_RE.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Hiragana_%E3%82%8C_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Japanese_Hiragana_kyokashotai_RE.png';" alt="e">
+    <input type="checkbox" name="us" id='check42' onclick="validate42()"/>
+    <span class="caption"><h1>re</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='ro'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/ro.wav" type="audio/mpeg">
+    </audio>
+    <img id='roo' onclick="ro.play()" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Japanese_Hiragana_kyokashotai_RO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/3/35/Hiragana_%E3%82%8D_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/70/Japanese_Hiragana_kyokashotai_RO.png';" alt="e">
+    <input type="checkbox" name="us" id='check43' onclick="validate43()"/>
+    <span class="caption"><h1>ro</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='wa'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/wa.wav" type="audio/mpeg">
+    </audio>
+    <img id='waa' onclick="wa.play()"  src="https://upload.wikimedia.org/wikipedia/commons/0/01/Japanese_Hiragana_kyokashotai_WA.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Hiragana_%E3%82%8F_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/0/01/Japanese_Hiragana_kyokashotai_WA.png';"  alt="a">
+    <input type="checkbox" name="us" id='check44' onclick="validate44()"/>
+    <span class="caption"><h1>wa</h1></span>
+        </div>
+        <div class="item">
+            <audio  id='wo'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/o.wav" type="audio/mpeg">
+    </audio>
+    <img id='woo' onclick="wo.play()" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_WO.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/6/64/Hiragana_%E3%82%92_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_WO.png';" alt="e" >
+    <input type="checkbox" name="us" id='check45' onclick="validate45()"/>
+    <span class="caption"><h1>wo</h1></span>
+        </div>
+        
+        <div class="item">
+            <audio  id='n'>
+        <source src="http://www.tokyowithkids.com/fyi/japanese/kana_sounds/n.wav" type="audio/mpeg">
+    </audio>
+    <img id='nn' onclick="n.play()" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Japanese_Hiragana_kyokashotai_N.png" onmouseover="this.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Hiragana_%E3%82%93_stroke_order_animation.gif';" onmouseout="this.src = 'https://upload.wikimedia.org/wikipedia/commons/7/77/Japanese_Hiragana_kyokashotai_N.png';" alt="e">
+    <input type="checkbox" name="us" id='check46' onclick="validate46()"/>
+    <span class="caption"><h1>n</h1></span>
+        </div>
+    </div>
+   </body>
+	
+<div id='tb1'>
+	<h2 id='qh1' class="quizHeader">Take a Quiz!</h2>
+  
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question1"><img src="http://vignette3.wikia.nocookie.net/japanese-ken/images/7/79/Japanese_Hiragana_A.png/revision/latest?cb=20110209014543"> </p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="0">
+	        <label>wa</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">a</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>ri</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>ya</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-i.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">i</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>ha</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>mu</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>ta</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-sa.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">sa</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>si</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>n</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>yi</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-yo.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label >ri</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>no</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>a</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">yo</label>
+	    	</ul>
+	  	</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-n.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q5" value="1">
+	        <label id="correctString5">n</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>ko</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>wo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>ro</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+		
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-mo.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>wa</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+				<label >u</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>mi</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="1">
+	        <label id="correctString6" >mo</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-ku.png"></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q7" value="1">
+	        <label id="correctString7" >ku</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label >a</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label>se</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label>na</label>
+    		</ul>
+	  	</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-se.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>yo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="1">
+				<label id="correctString8">se</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>ya</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>mu</label>
+	    	</ul>
+		</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-ho.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label>so</label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="0">
+				<label >u</label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="1">
+	        <label id="correctString9" >ho</label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label>tu</label>
+	    	</ul>
+		</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question1"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-ne.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q10" value="1">
+	        <label id="correctString10" >ne</label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="0">
+			<label >mo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label>i</label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label>ra</label>
+	    	</ul>
+		</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div id='submitter1' class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div  class="quizAnswers1" id="correctAnswer1"></div>
+	<div  class="quizAnswers1" id="correctAnswer2"></div>
+    <div  class="quizAnswers1" id="correctAnswer3"></div>
+    <div  class="quizAnswers1" id="correctAnswer4"></div>
+	<div  class="quizAnswers1" id="correctAnswer5"></div>
+	<div  class="quizAnswers1" id="correctAnswer6"></div>
+    <div  class="quizAnswers1" id="correctAnswer7"></div>
+    <div  class="quizAnswers1" id="correctAnswer8"></div>
+	<div  class="quizAnswers1" id="correctAnswer9"></div>
+    <div  class="quizAnswers1" id="correctAnswer10"></div>
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2  class="quizScore" id="userScore1"></h2>
+	</div>
+</div>
+<div id='tb2'>
+	<h2 id='qh1' class="quizHeader">Take a Quiz!</h2>
+  
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-to.png"> </p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q12" value="1">
+	        <label id="correctString12" >to</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q12" value="0">
+	        <label>a</label>
+	        <br>
+	        <input class="answer" type="radio" name="q12" value="0">
+	        <label>ri</label>
+	        <br>
+	        <input class="answer" type="radio" name="q12" value="0">
+	        <label>ya</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-ni.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q22" value="1">
+	        <label id="correctString22">ni</label>
+	        <br>
+	        <input class="answer" type="radio" name="q22" value="0">
+	        <label>ha</label>
+	        <br>
+	        <input class="answer" type="radio" name="q22" value="0">
+	        <label>mu</label>
+	        <br>
+	        <input class="answer" type="radio" name="q22" value="0">
+	        <label>ta</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-u.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q32" value="0">
+	        <label >sa</label>
+	        <br>
+	        <input class="answer" type="radio" name="q32" value="0">
+	        <label>si</label>
+	        <br>
+	        <input class="answer" type="radio" name="q32" value="0">
+	        <label>n</label>
+	        <br>
+	        <input class="answer" type="radio" name="q32" value="1">
+	        <label id="correctString32" >u</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-hi.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q42" value="0">
+	        <label >ri</label>
+	        <br>
+	        <input class="answer" type="radio" name="q42" value="0">
+	        <label>no</label>
+	        <br>
+	        <input class="answer" type="radio" name="q42" value="0">
+	        <label>a</label>
+	        <br>
+	        <input class="answer" type="radio" name="q42" value="1">
+	        <label id="correctString42">hi</label>
+	    	</ul>
+	  	</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-no.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q52" value="0">
+	        <label >n</label>
+	        <br>
+	        <input class="answer" type="radio" name="q52" value="1">
+	        <label id="correctString52" >no</label>
+	        <br>
+	        <input class="answer" type="radio" name="q52" value="0">
+	        <label>wo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q52" value="0">
+	        <label>ro</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+		
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-e.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q62" value="0">
+	        <label>wa</label>
+	        <br>
+	        <input class="answer" type="radio" name="q62" value="0">
+				<label >u</label>
+	        <br>
+	        <input class="answer" type="radio" name="q62" value="1">
+	        <label id="correctString62"  >e</label>
+	        <br>
+	        <input class="answer" type="radio" name="q62" value="0">
+	        <label >mo</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-me.png"></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q72" value="1">
+	        <label id="correctString72" >me</label>
+	        <br>
+	        <input class="answer" type="radio" name="q72" value="0">
+	        <label >a</label>
+	        <br>
+	        <input class="answer" type="radio" name="q72" value="0">
+	        <label>se</label>
+	        <br>
+	        <input class="answer" type="radio" name="q72" value="0">
+	        <label>na</label>
+    		</ul>
+	  	</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-wo.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q82" value="0">
+	        <label>yo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q82" value="1">
+				<label id="correctString82">wo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q82" value="0">
+	        <label>ya</label>
+	        <br>
+	        <input class="answer" type="radio" name="q82" value="0">
+	        <label>mu</label>
+	    	</ul>
+		</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-o.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q92" value="0">
+	        <label>so</label>
+	        <br>
+	        <input class="answer" type="radio" name="q92" value="0">
+				<label >u</label>
+	        <br>
+	        <input class="answer" type="radio" name="q92" value="1">
+	        <label id="correctString92" >o</label>
+	        <br>
+	        <input class="answer" type="radio" name="q92" value="0">
+	        <label>tu</label>
+	    	</ul>
+		</div>
+	  </td>
+		<td>
+	  	<div>
+	  		<p class="question2"><img src="http://www.japanesewordswriting.com/wp-content/uploads/2010/09/hiragana-ha.png" ></p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q102" value="0">
+	        <label  >ne</label>
+	        <br>
+	        <input class="answer" type="radio" name="q102" value="0">
+			<label >mo</label>
+	        <br>
+	        <input class="answer" type="radio" name="q102" value="0">
+	        <label>i</label>
+	        <br>
+	        <input class="answer" type="radio" name="q102" value="1">
+	        <label id="correctString102" >ha</label>
+	    	</ul>
+		</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div id='submitter1' class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz2()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div  class="quizAnswers2" id="correctAnswer12"></div>
+	<div  class="quizAnswers2" id="correctAnswer22"></div>
+    <div  class="quizAnswers2" id="correctAnswer32"></div>
+    <div  class="quizAnswers2" id="correctAnswer42"></div>
+	<div  class="quizAnswers2" id="correctAnswer52"></div>
+	<div  class="quizAnswers2" id="correctAnswer62"></div>
+    <div  class="quizAnswers2" id="correctAnswer72"></div>
+    <div  class="quizAnswers2" id="correctAnswer82"></div>
+	<div  class="quizAnswers2" id="correctAnswer92"></div>
+    <div  class="quizAnswers2" id="correctAnswer102"></div>
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2  class="quizScore" id="userScore2"></h2>
+	</div>
+</div>
+	
+	<div id='sv'>
+		<p id='pp'> Would you like to save your Performance?</p>
+		<button> yes </button>
+		<button> no </button>
+	</div>
+	
+	<div id='sv2' >
+		<p id='pp2'> Would you like to save your Performance?</p>
+		<button> yes </button>
+		<button> no </button>
+	</div>
+
+	<h3>All images/gifs are right of <a href="https://commons.wikimedia.org/wiki/Hiragana"> 'Wikimedia Commmons'</h3></a>
+	<h3>All sounds are right of <a href="http://www.tokyowithkids.com/fyi/hiragana_chart.html"> 'Japan With Kids'</h3></a>
+	<h3>Quiz basics sourced from <a href="https://codepen.io/harrysadlermusic/pen/DihjK"> 'codepen'</h3></a>
+	<h3><a href="https://www.w3schools.com/"> 'W3schools'</h3></a>
+</html>
